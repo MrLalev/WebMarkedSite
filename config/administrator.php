@@ -54,8 +54,8 @@ return array(
 	'menu' => [
         'products',
         'orders',
-        'contacts',
         'categories',
+        'Опции' => array('settings.site'),
     ],
 
 	/**

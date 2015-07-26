@@ -14,9 +14,8 @@ class ContactController extends Controller {
 	 */
 	public function index()
 	{
-        $contacts = Contact::orderBy('created_at', 'desc')->paginate(1);
 
-        return view('contact.index', ['contacts' => $contacts] );
+        return view('contact.index');
 
 	}
 

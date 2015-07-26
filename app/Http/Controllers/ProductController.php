@@ -17,10 +17,10 @@ class ProductController extends Controller {
     public function index()
     {
         $products = Product::orderBy('created_at', 'desc')->paginate(9);
+        $categories= Category::all();
 
 
-
-        return view('products.index', ['products' => $products] );
+        return view('products.index', ['products' => $products, 'categories' => $categories]);
     }
 
     /**

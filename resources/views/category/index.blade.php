@@ -12,7 +12,7 @@
                      <span class="caret"></span></button>
                      <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
                        @foreach($categories as $category)
-                       <li role="presentation"><a role="menuitem" tabindex="-1" href="category/{!! $category->id !!}">{!! $category->category_name !!}</a></li>
+                       <li role="presentation"><a role="menuitem" tabindex="-1" href="{!! $url = action('CategoryController@show', ['id' => $category->id])!!}">{!! $category->category_name !!}</a></li>
                        @endforeach
                      </ul>
                    </div>

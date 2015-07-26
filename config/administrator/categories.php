@@ -32,7 +32,7 @@ return [
         'id' => array(
             'title' => '№',
         ),
-        'categories' => array(
+        'category_name' => array(
             'title' => 'Име на категорията',
         )
     ],
@@ -43,7 +43,7 @@ return [
      * @type array
      */
     'edit_fields' => [
-        'categories' => array(
+        'category_name' => array(
             'title'=>'Име на категорията',
             'type' => 'text',
 

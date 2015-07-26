@@ -41,8 +41,10 @@ return [
         'product_quantity' => [
             'title' => 'Количество'
         ],
-        'category' => [
-            'title' => 'Категория'
+        'category_id' => [
+            'title' => 'Категория',
+            'relationship' => 'category',
+            'select' => "category_name",
         ],
         'promotionFrom' => [
             'title' => 'Промоция от'
@@ -78,14 +80,13 @@ return [
             'thousands_separator' => ',', //optional, defaults to ','
             'decimal_separator' => '.', //optional, defaults to '.'
         ],
-//        'category' => [
-//            'type' => 'relationship',
-//            'title' => 'Категория',
-//            'name_field' => 'categories',
-//            'select' => "categories",
-//            'autocomplete' => true,
-//            'num_options' => 5,
-//        ],
+       'category' => [
+           'type' => 'relationship',
+           'title' => 'Категория',
+           'name_field' => 'category_name',
+           'autocomplete' => true,
+           'num_options' => 5,
+       ],
         'promotionFrom' => array(
             'type' => 'date',
             'title' => 'Промоция от',
@@ -97,6 +98,19 @@ return [
             'title' => 'Промоция до',
             'date_format' => 'yy-mm-dd', //optional, will default to this value
         ),
+        'image' => [
+            'title' => 'Image',
+            'type' => 'image',
+            'location' => public_path() . '/img/products/originals/',
+            'naming' => 'random',
+            'length' => 20,
+            'size_limit' => 2,
+            'sizes' => [
+                array(65, 57, 'crop', public_path() . '/img/products/thumbs/small/', 100),
+                array(220, 138, 'landscape', public_path() . '/img/products/thumbs/medium/', 100),
+                array(383, 276, 'fit', public_path() . '/img/products/thumbs/full/', 100)
+            ]
+        ],
         'product_quantity' => [
             'type' => 'number',
             'title' => 'Количество',

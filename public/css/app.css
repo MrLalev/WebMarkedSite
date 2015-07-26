@@ -6951,8 +6951,8 @@ input:focus,
 }
 
 .description{
-    min-height:200px;
-    height:200px;
+    min-height:190px;
+    height:190px;
     overflow: hidden;
 }
 
@@ -6979,4 +6979,7 @@ input:focus,
 }
 .promotion{
     color:red;
+}
+.all-container{
+    margin-top:80px;
 }

@@ -19,13 +19,13 @@ class CreateProductsTable extends Migration {
             $table->text('product_content');
             $table->float('product_price');
             $table->integer('product_quantity');
-            $table->string('category');
+            $table->integer('category_id');
+            $table->string('image');
             $table->date('promotionFrom');
             $table->date('promotionTo');
 			$table->timestamps();
 		});
 	}
-
 	/**
 	 * Reverse the migrations.
 	 *

@@ -17,7 +17,7 @@ Route::get('/home', 'HomeController@index');
 Route::resource('products', 'ProductController');
 Route::resource('contact', 'ContactController');
 Route::post('/order', 'OrderController@setOrder');
-
+Route::get('category/{id}', 'CategoryController@show');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
