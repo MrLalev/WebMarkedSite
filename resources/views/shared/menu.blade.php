@@ -15,6 +15,7 @@
         <ul class="nav navbar-nav">
             <li><a href="{{ url('/') }}">Начало</a></li>
             <li><a href="{{ url('products') }}">Продукти</a></li>
+            <li><a href="{{ url('contact') }}">За Контакти</a></li>
         </ul>
 
         <ul class="nav navbar-nav navbar-right">

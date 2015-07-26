@@ -54,6 +54,8 @@ return array(
 	'menu' => [
         'products',
         'orders',
+        'contacts',
+        'categories',
     ],
 
 	/**

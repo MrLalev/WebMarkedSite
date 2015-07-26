@@ -41,6 +41,15 @@ return [
         'product_quantity' => [
             'title' => 'Количество'
         ],
+        'category' => [
+            'title' => 'Категория'
+        ],
+        'promotionFrom' => [
+            'title' => 'Промоция от'
+        ],
+        'promotionTo' => [
+            'title' => 'Промоция до'
+        ],
         'created_at' => [
             'title' => 'Дата на създаване'
         ]
@@ -69,6 +78,25 @@ return [
             'thousands_separator' => ',', //optional, defaults to ','
             'decimal_separator' => '.', //optional, defaults to '.'
         ],
+//        'category' => [
+//            'type' => 'relationship',
+//            'title' => 'Категория',
+//            'name_field' => 'categories',
+//            'select' => "categories",
+//            'autocomplete' => true,
+//            'num_options' => 5,
+//        ],
+        'promotionFrom' => array(
+            'type' => 'date',
+            'title' => 'Промоция от',
+            'date_format' => 'yy-mm-dd', //optional, will default to this value
+
+        ),
+        'promotionTo' => array(
+            'type' => 'date',
+            'title' => 'Промоция до',
+            'date_format' => 'yy-mm-dd', //optional, will default to this value
+        ),
         'product_quantity' => [
             'type' => 'number',
             'title' => 'Количество',

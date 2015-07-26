@@ -6972,3 +6972,11 @@ input:focus,
 .product {
     box-shadow: 0px 0px 1px #888;
 }
+.view{
+    min-height:150px;
+    height:150px;
+    overflow: hidden;
+}
+.promotion{
+    color:red;
+}

@@ -19,7 +19,14 @@
                     <p>
                         {!! $product->product_quantity!!} бр.
                     </p>
-
+                      @if( new DateTime() >= new Datetime($product->promotionFrom) && new DateTime() <= new Datetime($product->promotionTo))
+                      <div class="promotion">
+                    <p> В промоция от:
+                        {!! $product->promotionFrom!!} до
+                        {!! $product->promotionTo!!}
+                    </p>
+                    </div>
+                      @endif
 				</div>
 				@if (!Auth::guest())
                      <div class="panel-body">

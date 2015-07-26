@@ -1,11 +1,11 @@
 <?php namespace App\Http\Controllers;
 
-use App\CommentPoem;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Category;
 
 class ProductController extends Controller {
 
