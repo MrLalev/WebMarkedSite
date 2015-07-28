@@ -28,6 +28,11 @@
 					        </div>
 					        <div class="panel-body">
                                 <div class="description">
+                                @if (($product->image)  != "")
+                                <div class="img-products">
+                                    <img src="/img/products/thumbs/small/{!! $product->image !!}">
+                                </div>
+                                @endif
                                     <p>{!! mb_substr($product->product_content, 0, 215) !!} <a href="{!! url('/products/' . $product->id) !!}">...</a> </p>
                                 </div>
                                 <div class="view">

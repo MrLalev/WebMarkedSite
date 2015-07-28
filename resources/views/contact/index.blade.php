@@ -10,7 +10,7 @@
 				</div>
                     <div class="panel-body" id="contact">
                     <div class="col-md-5">
-                         <img id="contact-image">
+                         <img id="contact-image" class="img-responsive">
                     </div>
                         <div class="col-md-4">
                             <h5 id="contact-content">

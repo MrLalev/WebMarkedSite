@@ -11,7 +11,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-4">
-                            <img id="home-image">
+                            <img id="home-image" class="img-responsive">
                             </div>
                             <div class="col-md-5">
                                  <h5 id="home-content"> </h5>

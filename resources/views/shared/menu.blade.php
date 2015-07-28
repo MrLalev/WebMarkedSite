@@ -8,7 +8,7 @@
             <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="#" >
-            <p id="logo-Menu"></p>
+            <p id="logo-Menu" ></p>
         </a>
     </div>
 

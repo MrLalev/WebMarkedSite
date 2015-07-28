@@ -11,7 +11,22 @@
 
 				<div class="panel-body">
 				    @if (($product->image)  != "")
-                    <img src="/img/products/originals/{!! $product->image !!}">
+				    <script src='/js/jquery-1.8.3.min.js'></script>
+                    <script src='/js/jquery.elevatezoom.js'></script>
+                    <div>
+                    <img class="img-responsive" id="zoom_01" src="/img/products/thumbs/medium/{!! $product->image !!}" data-zoom-image="/img/products/thumbs/full/{!! $product->image !!}"/>
+                    <div>
+                    <script>
+                     if ($(window).width() <= 740) {
+                         $("#zoom_01").elevateZoom({zoomType : "inner", cursor: "crosshair"});
+                         }
+                        else if ($(window).width() <= 990) {
+                           $("#zoom_01").elevateZoom({easing : true, zoomWindowWidth:320, zoomWindowHeight:263});
+                        }
+                        else {
+                          $("#zoom_01").elevateZoom({easing : true,zoomWindowWidth:400, zoomWindowHeight:263});
+                        }
+                    </script>
                     @endif
 					<p>
 					    {!! $product->product_content !!}

@@ -6951,8 +6951,8 @@ input:focus,
 }
 
 .description{
-    min-height:190px;
-    height:190px;
+    min-height:300px;
+    height:300px;
     overflow: hidden;
 }
 
@@ -6982,4 +6982,19 @@ input:focus,
 }
 .all-container{
     margin-top:80px;
+}
+#home-img{
+    width: auto;
+    height: auto;
+    max-height: 380px;
+    max-width: 500px;
+}
+#contact-img{
+    width: auto;
+    height: auto;
+    max-height: 380px;
+    max-width: 500px;
+}
+.img-products{
+    text-align: center;
 }
