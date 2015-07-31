@@ -18,7 +18,7 @@
                     <div>
                     <script>
                      if ($(window).width() <= 740) {
-                         $("#zoom_01").elevateZoom({zoomType : "inner", cursor: "crosshair"});
+                         $("#zoom_01");
                          }
                         else if ($(window).width() <= 990) {
                            $("#zoom_01").elevateZoom({easing : true, zoomWindowWidth:320, zoomWindowHeight:263});
