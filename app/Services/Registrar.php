@@ -20,6 +20,7 @@ class Registrar implements RegistrarContract {
 			'email' => 'required|email|max:255|unique:users',
 			'password' => 'required|confirmed|min:6',
             'g-recaptcha-response' => 'required|recaptcha',
+            'GSM' => 'required|max:12',
 		]);
 	}
 

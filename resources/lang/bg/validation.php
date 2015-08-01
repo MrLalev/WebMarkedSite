@@ -109,7 +109,8 @@ return [
         'family' => 'фамилно име',
         'g-recaptcha-response' => 'потвърждение на паролата',
         'first_name' => 'собствено име',
-        'family_name' => 'фамилно име'
+        'family_name' => 'фамилно име',
+        'GSM' => 'Телефон'
         
     ],
 

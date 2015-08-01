@@ -1,7 +1,7 @@
 @extends('shared.layout')
 
 @section('content')
-<div class="container">
+<div class="container all-container">
 
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1">

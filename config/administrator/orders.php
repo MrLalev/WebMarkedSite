@@ -44,6 +44,11 @@ return [
             'relationship' => 'user',
             'select' => "email",
         ),
+        'GSM' => array(
+            'title' => 'GSM',
+            'relationship' => 'user',
+            'select' => "GSM",
+        ),
         'product_name' => array(
             'title' => 'Име на продукта',
             'relationship' => 'product',

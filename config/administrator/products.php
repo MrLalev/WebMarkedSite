@@ -107,8 +107,8 @@ return [
             'size_limit' => 2,
             'sizes' => [
                 array(150, 132, 'crop', public_path() . '/img/products/thumbs/small/', 100),
-                array(220, 138, 'landscape', public_path() . '/img/products/thumbs/medium/', 100),
-                array(383, 276, 'fit', public_path() . '/img/products/thumbs/full/', 100)
+                array(350, 263, 'landscape', public_path() . '/img/products/thumbs/medium/', 100),
+                array(1200, 800, 'fit', public_path() . '/img/products/thumbs/full/', 100)
             ]
         ],
         'product_quantity' => [

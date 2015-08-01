@@ -17,15 +17,13 @@
                     <img class="img-responsive" id="zoom_01" src="/img/products/thumbs/medium/{!! $product->image !!}" data-zoom-image="/img/products/thumbs/full/{!! $product->image !!}"/>
                     <div>
                     <script>
-                     if ($(window).width() <= 740) {
-                         $("#zoom_01");
-                         }
-                        else if ($(window).width() <= 990) {
-                           $("#zoom_01").elevateZoom({easing : true, zoomWindowWidth:320, zoomWindowHeight:263});
-                        }
-                        else {
-                          $("#zoom_01").elevateZoom({easing : true,zoomWindowWidth:400, zoomWindowHeight:263});
-                        }
+                          if ($(window).width() <= 740) {
+                                     $("#zoom_01");
+                          } else if ($(window).width() <= 990) {
+                                     $("#zoom_01").elevateZoom({easing : true, zoomWindowWidth:320, zoomWindowHeight:263});
+                          }else {
+                                     $("#zoom_01").elevateZoom({easing : true,zoomWindowWidth:400, zoomWindowHeight:263});
+                          }
                     </script>
                     @endif
 					<p>

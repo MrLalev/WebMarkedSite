@@ -48,6 +48,19 @@
     </div>
 
     <div class="form-group">
+                {!! Form::label('GSM', 'Телефон', [
+                'class' => 'col-md-4 control-label'
+                ])
+            !!}
+            <div class="col-md-6">
+                {!! Form::text('GSM', old('GSM'), [
+                    'class' => 'form-control'
+                    ])
+                !!}
+            </div>
+        </div>
+
+    <div class="form-group">
         {!! Form::label('password', 'Парола', [
             'class' => 'col-md-4 control-label'
             ])
