@@ -11,6 +11,7 @@
                      <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Продукти
                      <span class="caret"></span></button>
                      <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="/products">Всички продукти</a></li>
                        @foreach($categories as $category)
                        <li role="presentation"><a role="menuitem" tabindex="-1" href="{!! $url = action('CategoryController@show', ['id' => $category->id])!!}">{!! $category->category_name !!}</a></li>
                        @endforeach
