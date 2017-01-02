@@ -21,3 +21,21 @@ Thank you for considering contributing to the Laravel framework! The contributio
 ### License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+
+## Development
+If you have HTTP Error while upload Image:
+
+To find out where your php.ini is located, you can run the following command from a terminal:
+$ php --ini
+
+1.Locate the line:
+
+    ';extension=php_fileinfo.dll'
+
+2.Remove the starting comment:
+
+    'extension=php_fileinfo.dll'
+
+## Authors
+
+Valeria Kostadinova and Lachezar Lalev
